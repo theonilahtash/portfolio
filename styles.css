@@ -1,21 +1,43 @@
 h1 {
   padding: 10px;
   color: red;
-  text-align: center;
-  font-size: 4em;
+  text-align: left;
+  font-size: 1.8em;
 }
 body {
   background-color: cyan;
   background-size: cover;
   color: black;
   font-size: 1.6em;
+  border: 4px solid black;
 }
 img {
-  float: center;
+  float:inherit;
   width: auto;
   height: auto;
+  border: 4px solid blue;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.8em;
   color: blue;
+}
+@media screen (min-width=480px)
+
+# {
+   font-size: 1.8em;
+   color: green;
+}
+#nav>ul {
+  display:inline-block;
+  padding: 15px;
+  float:left;
+}
+ #nav>ul>li {
+  display:inline-block;
+  flex-direction: column;
+  list-style: none;
+  float:left;
+}
+ul>li >a{
+  text-decoration:none;
 }
